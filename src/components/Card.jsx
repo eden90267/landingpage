@@ -27,8 +27,15 @@ class Card extends React.Component {
 
     return (
         <div className="column" style={columnStyle}>
-
+          <div className="ui basic segment" style={aboutSectionStyle}>
+            <div className="ui basic very padded segment" style={aboutBorderStyle}>
+              <span className="ui huge header">{this.props.cardTitle}</span>
+              <p>{this.props.cardContent}</p>
+            </div>
+          </div>
         </div>
     )
   }
 }
+
+export default Card;
