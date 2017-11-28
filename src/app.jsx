@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 require('Source/less/theme.less');
-import pic from 'Source/images/glenn-carstens-peters-203007.jpg';
+
+import LandingPage from 'Source/components/LandingPage.jsx';
+var serviceName = 'React';
 
 ReactDOM.render(
-  <img className="ui medium circular image" src={pic}/>,
+  <LandingPage serviceName={serviceName} />,
   document.querySelector('#app')
 );
