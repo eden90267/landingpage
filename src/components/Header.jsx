@@ -12,7 +12,7 @@ class Header extends React.Component {
 
   render() {
     var Items = (
-        <div className={'item'}>
+        <div className={'item'} onClick={this.props.service}>
           Service
         </div>
     );
